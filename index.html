@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Integral Avanzado | Portal Universitario</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para íconos interactivos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS para animaciones por scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+    <!-- MathJax para renderizar fórmulas matemáticas impecables -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- Barra de Progreso de Lectura Superior -->
+    <div id="progress-bar"></div>
+
+    <!-- Menú de Navegación Premium -->
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">
+                <i class="fa-solid fa-infinity glow-icon"></i>
+                <span>Cálculo <span class="gradient-text">Integral</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#parcial1" class="nav-link-item"><i class="fa-solid fa-layer-group"></i> 1er Parcial</a></li>
+                <li><a href="#parcial2" class="nav-link-item"><i class="fa-solid fa-chart-line"></i> 2do Parcial</a></li>
+                <li><a href="#glosario" class="nav-link-item"><i class="fa-solid fa-book-open"></i> Recursos</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="badge">Nivel Universitario</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero de Alto Impacto -->
+    <section class="hero-section">
+        <div class="hero-bg-animation"></div>
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1200">
+            <div class="university-tag"><i class="fa-solid fa-graduation-cap"></i> TRABAJO DE INVESTIGACIÓN ACADÉMICA</div>
+            <h1>Plataforma Interactiva de <br><span class="gradient-text">Cálculo Integral</span></h1>
+            <p>Una suite educativa avanzada, diseñada sin barreras de acceso, para explorar la teoría de la acumulación, métodos analíticos complejos y modelado físico en ingeniería.</p>
+            <div class="hero-buttons">
+                <a href="#parcial1" class="btn btn-primary">Comenzar Estudio <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#parcial2" class="btn btn-secondary">Aplicaciones Físicas</a>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <p>Desliza para explorar los contenidos</p>
+            <i class="fa-solid fa-chevron-down bouncing-arrow"></i>
+        </div>
+    </section>
+
+    <!-- Contenido Académico -->
+    <main class="main-container">
+
+        <!-- ================= SECCIÓN: 1ER PARCIAL ================= -->
+        <section id="parcial1" class="academic-section">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Módulo Académico I</span>
+                <h2>Primer Parcial: Fundamentos y Métodos</h2>
+                <p>Análisis riguroso de las antiderivadas directas, manipulaciones algebraicas y transformaciones de variables.</p>
+            </div>
+
+            <div class="themes-grid">
+                <!-- Tema 1: Integrales -->
+                <article class="interactive-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fa-solid fa-square-root-variable"></i></div>
+                    <h3>Integrales Definidas e Indefinidas</h3>
+                    <p>Comprensión teórica del Teorema Fundamental del Cálculo. La integración como proceso inverso a la diferenciación y herramienta matemática para la sumatoria de infinitas áreas infinitesimales.</p>
+                    
+                    <div class="math-box">
+                        \( x = \int_{a}^{b} f(t) \, dt \)
+                    </div>
+
+                    <div class="media-container">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/6iOqJ_75w20" title="Conceptos de Integrales" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 2: Cambio de Variable -->
+                <article class="interactive-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fa-solid fa-shuffle"></i></div>
+                    <h3>Cambio de Variables (Sustitución)</h3>
+                    <p>Consiste en transformar la variable original de integración para convertir una expresión algebraica compleja en otra completamente inmediata y estándar.</p>
+                    
+                    <div class="math-box">
+                        \( x = \int g(u) \cdot u' \, dy \)
+                    </div>
+
+                    <div class="media-container">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/V6H38zV_5O0" title="Cambio de Variable" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 3: Integración por Partes -->
+                <article class="interactive-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <h3>Integración por Partes</h3>
+                    <p>Basado analíticamente en la regla de diferenciación de un producto de funciones. Es crucial al resolver integrales donde coexisten funciones logarítmicas, algebraicas o trigonométricas.</p>
+                    
+                    <div class="math-box">
+                        \( x = uv - \int v \, du \)
+                    </div>
+
+                    <div class="media-container">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/d7M97U52vN0" title="Integración por partes" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 4: Integrales Trigonométricas -->
+                <article class="interactive-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fa-solid fa-wave-square"></i></div>
+                    <h3>Integrales Trigonométricas</h3>
+                    <p>Uso sistemático de identidades trigonométricas y sustituciones específicas para simplificar productos de potencias de funciones como senos, cosenos, secantes y tangentes.</p>
+                    
+                    <div class="math-box">
+                        \( x = a \sin(\theta) \)
+                    </div>
+
+                    <div class="media-container">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80" alt="Visualización de Ondas y Funciones Trigonométricas" class="card-img">
+                        <div class="video-wrapper" style="margin-top: 10px;">
+                            <iframe src="https://www.youtube.com/embed/74z7E6v_e3E" title="Integrales trigonométricas" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN: 2DO PARCIAL ================= -->
+        <section id="parcial2" class="academic-section alternative-bg">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Módulo Académico II</span>
+                <h2>Segundo Parcial: Aplicaciones e Ingeniería</h2>
+                <p>Estudio de métodos algebraicos racionales avanzados y modelado de magnitudes físicas y espaciales del mundo real.</p>
+            </div>
+
+            <div class="themes-grid">
+                <!-- Tema 1: Fracciones Parciales Caso 1 y 2 -->
+                <article class="interactive-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fa-solid fa-divide"></i></div>
+                    <h3>Fracciones Parciales (Caso 1 y 2)</h3>
+                    <p>Descomposición analítica de cocientes de polinomios. El <b>Caso 1</b> trabaja con factores lineales distintos en el denominador, mientras que el <b>Caso 2</b> gestiona eficientemente factores lineales repetidos.</p>
+                    
+                    <div class="math-box">
+                        \( x = \frac{A}{y-a} + \frac{B}{(y-a)^2} \)
+                    </div>
+
+                    <div class="media-container">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/4yB4Dz-7j-4" title="Fracciones Parciales" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 2: Área y Volumen -->
+                <article class="interactive-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fa-solid fa-cube"></i></div>
+                    <h3>Área y Volumen de Revolución</h3>
+                    <p>Uso de integrales para mapear geometrías en 2D y el cálculo de cuerpos tridimensionales generados mediante la rotación de funciones sobre ejes mediante discos o arandelas.</p>
+                    
+                    <div class="math-box">
+                        \( x = \pi \int_{a}^{b} [R(y)^2 - r(y)^2] \, dy \)
+                    </div>
+
+                    <div class="media-container">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Modelado de Superficies Tridimensionales de Revolución" class="card-img">
+                        <div class="video-wrapper" style="margin-top: 10px;">
+                            <iframe src="https://www.youtube.com/embed/2vS99_7SOfA" title="Sólidos de revolución" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 3: Longitud de una curva -->
+                <article class="interactive-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fa-solid fa-bezier-curve"></i></div>
+                    <h3>Longitud de una Curva</h3>
+                    <p>Aplicación de cálculo avanzado para determinar la longitud dimensional exacta de un arco de función continua en un intervalo bidimensional definido.</p>
+                    
+                    <div class="math-box">
+                        \( x = \int_{a}^{b} \sqrt{1 + [f'(t)]^2} \, dt \)
+                    </div>
+
+                    <div class="media-container">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/7879gUymu8g" title="Longitud de curva" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tema 4: Cinemática -->
+                <article class="interactive-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Cinemática (Física Aplicada)</h3>
+                    <p>Análisis dinámico de partículas. Permite deducir de forma precisa las funciones de velocidad y la trayectoria de posición de un móvil mediante la integración sistemática de su aceleración temporal.</p>
+                    
+                    <div class="math-box">
+                        \( x(t) = x_0 + \int_{0}^{t} v(\tau) \, d\tau \)
+                    </div>
+
+                    <div class="media-container">
+                        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80" alt="Cinemática y Dinámica de Partículas" class="card-img">
+                        <div class="video-wrapper" style="margin-top: 10px;">
+                            <iframe src="https://www.youtube.com/embed/4_n7U9oE64Y" title="Cinemática Aplicada" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página Institucional -->
+    <footer>
+        <div class="footer-content">
+            <p><i class="fa-solid fa-university"></i> Plataforma Académica Universitaria — Entorno Abierto de Aprendizaje</p>
+            <p class="footer-sub">Optimizado para estudios matemáticos avanzados e investigación independiente.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Control e Interactividad -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
